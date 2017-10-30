@@ -1,7 +1,8 @@
 # Site
-title:          JBlog
-bio:            'Just a simple Jekyll theme'
-description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
+title:          Bassatne Exchange
+bio:            'Sameer Abou Al Nasr Bassatne'
+description:    "Sameer Abou Al Nasr Bassatne for money exchange services"
+               #"JBlog is a minimal, one column and blue jekyll theme for your blog."
 picture:        'assets/img/profile.png'
 locale:         en_US
 url:            https://alperenbozkurt.github.io/JBlog
@@ -23,9 +24,9 @@ sass:
 
 # Social
 # if you don't have any of social below, comment the line.
-#email:
-twitter: username
-facebook: username
+email:
+#twitter: username
+#facebook: username
 #google:
   #plus: #username
   #analytics:
@@ -33,16 +34,16 @@ facebook: username
   #ad-client:
   #ad-slot:
 #bing-verify:
-github: username
-stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin: username
+#github: username
+#stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin: username
 #xing: username
-instagram: username
-lastfm: username
-tumblr: username
+#instagram: username
+#lastfm: username
+#tumblr: username
 #pinterest: username
 #foursquare: username
-steam: username
+#steam: username
 #dribbble: username
 youtube: username
 #soundcloud: username
@@ -59,14 +60,18 @@ youtube: username
 # Comments
 disqus_shortname: alperenbozkurt-net
 
+maps:
+  google:
+    api_key: AIzaSyDBuUOFDhsvGIJXTa9jgpMoIUw1Wen8P54
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-maps
 
 jekyll-mentions:
     base_url: https://github.com
