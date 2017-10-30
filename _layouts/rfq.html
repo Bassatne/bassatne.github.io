@@ -65,7 +65,7 @@
         <div class="yazi">
           <div class="content">
             <!-- -->
-            <form method="POST" action="//formspree.io/bassatne.exchange@gmail.com">
+            <form method="POST" action="//formspree.io/bassatne.exchange@gmail.com" id="rfqForm">
               <table>
               <tr><td><label for="currencyListFrom">From</label></td><td><select id="currencyListFrom" name="from">
                 <option value="ALL">Albanian Lek (ALL)</option>
@@ -343,6 +343,17 @@
         $(document).ready(function() {
             $('#currencyListFrom').select2();
             $('#currencyListTo').select2();
+            $("#sendMessage").on("click", function() {
+                message = $("#rfqForm").serialize();
+                $.ajax({
+                    url: "//formspree.io/bassatne.exchange@gmail.com", 
+                    method: "POST",
+                    data: {message: message},
+                    dataType: "json"
+                });
+                alert('Your request is submitted, we\'ll be in touch soon.');
+                return false;
+            });
         });
     </script>
   </body>
