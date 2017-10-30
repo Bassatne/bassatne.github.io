@@ -355,11 +355,12 @@
                 dataType: "json",
                 cache: false,
                 success: function(){
-                  alert('Your request is submitted, we\'ll be in touch soon.');
+                  //alert('Your request is submitted, we\'ll be in touch soon.');
                   window.location.href = "//bassatne.github.io/thank-you";
                 },
                 error: function(){
-                  alert('Couldn\'t submit your request, please try later or contact support');
+                  //alert('Couldn\'t submit your request, please try later or contact support');
+                  window.location.href = "//bassatne.github.io/not-submitted";
                 }
             });
             
