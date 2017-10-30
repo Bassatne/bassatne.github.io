@@ -63,11 +63,27 @@
       <div class="yazilar">
         <div class="yazi">
           <div class="content">
-            {{ content }}
+            <div id="map" style="min-height:400px;">&nbsp;</div>
           </div>
         </div>
         {% include scripts.html %}
       </div>
     </div>
+    <script>
+      function initMap() {
+        var bassatneExchange = {lat: 33.895810, lng: 35.483901};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: bassatneExchange
+        });
+        var marker = new google.maps.Marker({
+          position: bassatneExchange,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBuUOFDhsvGIJXTa9jgpMoIUw1Wen8P54&callback=initMap">
+    </script>
   </body>
 </html>

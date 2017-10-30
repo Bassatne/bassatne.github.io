@@ -7,4 +7,3 @@ location:
     longitude: 35.483901
     title: Bassatne exchange
 ---
-{% google_map width="100%" zoom="15"%}

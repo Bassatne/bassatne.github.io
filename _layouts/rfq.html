@@ -66,8 +66,8 @@
           <div class="content">
             <!-- -->
             <form method="POST" action="http://formspree.io/bassatne.exchange@gmail.com">
-              <label for="currencyListFrom">From</label>
-              <select id="currencyListFrom" name="from">
+              <table>
+              <tr><td><label for="currencyListFrom">From</label></td><td><select id="currencyListFrom" name="from">
                 <option value="ALL">Albanian Lek (ALL)</option>
                 <option value="DZD">Algerian Dinar (DZD)</option>
                 <option value="AOA">Angolan Kwanza (AOA)</option>
@@ -194,10 +194,8 @@
                 <option value="VND">Vietnamese Dong (VND)</option>
                 <option value="YER">Yemeni Rial (YER)</option>
                 <option value="ZMW">Zambian Kwacha (ZMW)</option>
-              </select>
-              <br/>
-              <label for="currencyListTo">To</label>
-              <select id="currencyListTo" name="to">
+              </select></td></tr>
+              <tr><td><label for="currencyListTo">To</label></td><td><select id="currencyListTo" name="to">
                 <option value="ALL">Albanian Lek (ALL)</option>
                 <option value="DZD">Algerian Dinar (DZD)</option>
                 <option value="AOA">Angolan Kwanza (AOA)</option>
@@ -324,18 +322,12 @@
                 <option value="VND">Vietnamese Dong (VND)</option>
                 <option value="YER">Yemeni Rial (YER)</option>
                 <option value="ZMW">Zambian Kwacha (ZMW)</option>
-              </select>
-              <br/>
-              <label>Amount</label>
-              <input type="number" name="amount" placeholder="amount" required>
-              <br/>
-              <label>Your mobile number</label>
-              <input type="number" name="mobileNumber" placeholder="mobile number" required>
-              <br/>
-              <label for="replyToWhatsapp">Reply to me via WhatsApp</label>
-              <input type="checkbox" name="replyToWhatsapp" id="replyToWhatsapp">
-              <br/>
-              <button type="submit">Send</button>
+              </select></td></tr>
+              <tr><td><label>Amount</label></td><td><input type="number" name="amount" placeholder="amount" required></td></tr>
+              <tr><td><label>Your mobile number</label></td><td><input type="number" name="mobileNumber" placeholder="mobile number" required></td></tr>
+              <tr><td><label for="replyToWhatsapp">Reply to me via WhatsApp</label></td><td><input type="checkbox" name="replyToWhatsapp" id="replyToWhatsapp"></td></tr>
+              <tr><td colspan=2 style="text-align:center;"><button type="submit" style="min-width:70%">Send</button></td></tr>
+              </table>
             </form>
             <!-- -->
           </div>
