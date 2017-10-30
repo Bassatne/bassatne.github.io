@@ -67,6 +67,7 @@
             <!-- -->
             <form method="POST" id="rfqForm">
               <table>
+              <tr><td colspan=2></td></tr>
               <tr><td><label for="currencyListFrom">From</label></td><td><select id="currencyListFrom" name="from">
                 <option value="ALL">Albanian Lek (ALL)</option>
                 <option value="DZD">Algerian Dinar (DZD)</option>
@@ -324,7 +325,7 @@
                 <option value="ZMW">Zambian Kwacha (ZMW)</option>
               </select></td></tr>
               <tr><td><label>Amount</label></td><td><input type="number" name="amount" placeholder="amount" required></td></tr>
-              <tr><td><label>Your mobile number</label></td><td><input type="number" name="mobileNumber" placeholder="mobile number" required></td></tr>
+              <tr><td><label>Your mobile number</label></td><td><input type="tel" name="tel" placeholder="mobile number" required></td></tr>
               <tr><td><label for="replyToWhatsapp">Reply to me via WhatsApp</label></td><td><input type="checkbox" name="replyToWhatsapp" id="replyToWhatsapp"></td></tr>
               <tr><td colspan=2 style="text-align:center;"><button type="submit" id="sendMessage" style="min-width:70%">Send</button></td></tr>
               </table>
@@ -339,6 +340,8 @@
     </div>
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script> -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript">
         //$(document).ready(function() {
         //    $('#currencyListFrom').select2();
@@ -367,6 +370,6 @@
             return false;
         });
     </script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
   </body>
 </html>
