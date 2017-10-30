@@ -5,7 +5,7 @@ description:    "Sameer Abou Al Nasr Bassatne for money exchange services"
                #"JBlog is a minimal, one column and blue jekyll theme for your blog."
 picture:        'assets/img/profile.png'
 locale:         en_US
-url:            https://alperenbozkurt.github.io/JBlog
+url:            https://bassatne.github.io
 
 
 # Jekyll
@@ -58,7 +58,7 @@ youtube: username
 
 
 # Comments
-disqus_shortname: alperenbozkurt-net
+#disqus_shortname: alperenbozkurt-net
 
 maps:
   google:
